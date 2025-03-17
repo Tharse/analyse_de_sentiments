@@ -10,8 +10,7 @@ from sklearn.metrics import accuracy_score
 from xgboost import XGBClassifier
 from flask import Flask, request
 
-
-
+# Init API partie 1
 app = Flask(__name__)
 
 
@@ -72,7 +71,7 @@ class Main:
 
         return json.dumps({"sentiment": sentiment, "text": json_text})
 
-# init
+# init la partie pour l'API partie 2
 main = Main()
 
 @app.route('/')
